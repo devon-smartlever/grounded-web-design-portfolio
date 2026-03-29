@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafaf8;
+  color: #1a1a2e;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.font-sans {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navy { color: #0f1f3d; }
+.bg-navy { background-color: #0f1f3d; }
+.gold { color: #b8973a; }
+.bg-gold { background-color: #b8973a; }

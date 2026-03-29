@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1a1209;
+  color: #f5f0e8;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+}
