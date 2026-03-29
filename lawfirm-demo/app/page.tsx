@@ -144,7 +144,7 @@ export default function Home() {
         {/* Decorative vertical line */}
         <div className="absolute left-16 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#b8973a]/30 to-transparent hidden md:block" />
 
-        <div className="max-w-7xl mx-auto px-6 md:px-16 pt-24 grid md:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 pt-24 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <p
               className="text-[#b8973a] tracking-[0.4em] uppercase text-xs mb-6"

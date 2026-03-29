@@ -40,21 +40,21 @@ const IMAGES = [
     id: "attorney_eleanor",
     name: "Managing Partner Eleanor Whitmore",
     prompt:
-      "Professional headshot of a confident senior female attorney in her 50s. Conservative dark navy blazer, white blouse, pearl necklace. Neutral gray background. Sharp, authoritative expression. Studio portrait photography, soft even lighting.",
+      "Single person only. Professional headshot portrait of one confident senior female attorney in her 50s. One face, one person, close-up portrait. Conservative dark navy blazer, white blouse, pearl necklace. Neutral gray background. Sharp, authoritative expression. Studio portrait photography, soft even lighting. Do not show multiple people or a grid of photos.",
     aspectRatio: "3:4",
   },
   {
     id: "attorney_james",
     name: "Senior Partner James Thornton",
     prompt:
-      "Professional headshot of a distinguished male attorney in his 60s. Dark charcoal suit, silk tie. Silver hair, strong jaw. Neutral gray background. Confident, experienced expression. Studio portrait photography, professional lighting.",
+      "Single person only. Professional headshot portrait of one distinguished male attorney in his 60s. One face, one person, close-up portrait. Dark charcoal suit, silk tie. Silver hair, strong jaw. Neutral gray background. Confident, experienced expression. Studio portrait photography, professional lighting. Do not show multiple people or a grid of photos.",
     aspectRatio: "3:4",
   },
   {
     id: "attorney_sophia",
     name: "Partner Sophia Kaur",
     prompt:
-      "Professional headshot of a sharp female attorney in her 40s of South Asian descent. Elegant dark blazer, minimal gold jewelry. Neutral gray background. Intelligent, focused expression. Studio portrait photography, professional lighting.",
+      "Single person only. Professional headshot portrait of one sharp female attorney in her 40s of South Asian descent. One face, one person, close-up portrait. Elegant dark blazer, minimal gold jewelry. Neutral gray background. Intelligent, focused expression. Studio portrait photography, professional lighting. Do not show multiple people or a grid of photos.",
     aspectRatio: "3:4",
   },
 ];
