@@ -1,3 +1,6 @@
+import KlingVideo from "@/components/KlingVideo";
+import { getAnimationUrls } from "@/lib/animations";
+
 const practiceAreas = [
   {
     title: "Mergers & Acquisitions",
@@ -66,6 +69,7 @@ const accolades = [
 ];
 
 export default function Home() {
+  const animations = getAnimationUrls();
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -107,6 +111,15 @@ export default function Home() {
         className="relative min-h-screen flex items-center"
         style={{ background: "linear-gradient(135deg, #0f1f3d 0%, #162847 60%, #0f1f3d 100%)" }}
       >
+        {/* Kling AI hero animation (lazy-loaded when available) */}
+        {animations.hero && (
+          <KlingVideo
+            videoUrl={animations.hero}
+            className="absolute inset-0 w-full h-full"
+          />
+        )}
+        {/* Overlay for text readability */}
+        {animations.hero && <div className="absolute inset-0 bg-[#0f1f3d]/70" />}
         {/* Decorative vertical line */}
         <div className="absolute left-16 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#b8973a]/30 to-transparent hidden md:block" />
 

@@ -1,3 +1,6 @@
+import KlingVideo from "@/components/KlingVideo";
+import { getAnimationUrls } from "@/lib/animations";
+
 const features = [
   {
     icon: "⚡",
@@ -115,6 +118,7 @@ const plans = [
 ];
 
 export default function Home() {
+  const animations = getAnimationUrls();
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -154,12 +158,20 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background effects */}
+        {/* Kling AI hero animation (lazy-loaded when available) */}
+        {animations.hero && (
+          <KlingVideo
+            videoUrl={animations.hero}
+            className="absolute inset-0 w-full h-full"
+          />
+        )}
+        {/* Background effects / overlay */}
         <div
           className="absolute inset-0"
           style={{
-            background:
-              "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(99,102,241,0.15) 0%, transparent 60%)",
+            background: animations.hero
+              ? "rgba(6,6,15,0.65)"
+              : "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(99,102,241,0.15) 0%, transparent 60%)",
           }}
         />
         <div

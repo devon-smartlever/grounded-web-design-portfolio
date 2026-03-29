@@ -1,4 +1,6 @@
 import Link from "next/link";
+import KlingVideo from "@/components/KlingVideo";
+import { getAnimationUrls } from "@/lib/animations";
 
 const navLinks = ["Menu", "About", "Reservations", "Contact"];
 
@@ -90,6 +92,7 @@ const stats = [
 ];
 
 export default function Home() {
+  const animations = getAnimationUrls();
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -124,6 +127,15 @@ export default function Home() {
             "linear-gradient(135deg, #1a1209 0%, #2a1e0a 50%, #1a1209 100%)",
         }}
       >
+        {/* Kling AI hero animation (lazy-loaded when available) */}
+        {animations.hero && (
+          <KlingVideo
+            videoUrl={animations.hero}
+            className="absolute inset-0 w-full h-full"
+          />
+        )}
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-[#1a1209]/70" />
         <div
           className="absolute inset-0 opacity-5"
           style={{
