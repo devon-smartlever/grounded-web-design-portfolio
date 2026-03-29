@@ -1,1 +1,5 @@
-{}
+{
+  "hero": "/images/hero.jpg",
+  "dashboard": "/images/dashboard.jpg",
+  "team": "/images/team.jpg"
+}

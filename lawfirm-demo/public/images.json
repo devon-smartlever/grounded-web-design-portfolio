@@ -1,1 +1,7 @@
-{}
+{
+  "hero": "/images/hero.jpg",
+  "office": "/images/office.jpg",
+  "attorney_eleanor": "/images/attorney_eleanor.jpg",
+  "attorney_james": "/images/attorney_james.jpg",
+  "attorney_sophia": "/images/attorney_sophia.jpg"
+}

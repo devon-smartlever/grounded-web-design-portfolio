@@ -41,7 +41,7 @@ const IMAGES = [
     name: "Team Collaboration",
     prompt:
       "Diverse team of software engineers in a modern tech office collaborating around a large screen showing analytics dashboards. Bright natural light, standing desks, plants, casual professional attire. Authentic workplace photography.",
-    aspectRatio: "3:2",
+    aspectRatio: "16:9",
   },
 ];
 
@@ -56,7 +56,7 @@ async function generateImage(
   prompt: string,
   aspectRatio: string
 ): Promise<Buffer> {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${API_KEY}`;
 
   const response = await fetch(url, {
     method: "POST",

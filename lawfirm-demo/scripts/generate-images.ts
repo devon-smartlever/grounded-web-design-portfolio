@@ -41,21 +41,21 @@ const IMAGES = [
     name: "Managing Partner Eleanor Whitmore",
     prompt:
       "Professional headshot of a confident senior female attorney in her 50s. Conservative dark navy blazer, white blouse, pearl necklace. Neutral gray background. Sharp, authoritative expression. Studio portrait photography, soft even lighting.",
-    aspectRatio: "4:5",
+    aspectRatio: "3:4",
   },
   {
     id: "attorney_james",
     name: "Senior Partner James Thornton",
     prompt:
       "Professional headshot of a distinguished male attorney in his 60s. Dark charcoal suit, silk tie. Silver hair, strong jaw. Neutral gray background. Confident, experienced expression. Studio portrait photography, professional lighting.",
-    aspectRatio: "4:5",
+    aspectRatio: "3:4",
   },
   {
     id: "attorney_sophia",
     name: "Partner Sophia Kaur",
     prompt:
       "Professional headshot of a sharp female attorney in her 40s of South Asian descent. Elegant dark blazer, minimal gold jewelry. Neutral gray background. Intelligent, focused expression. Studio portrait photography, professional lighting.",
-    aspectRatio: "4:5",
+    aspectRatio: "3:4",
   },
 ];
 
@@ -70,7 +70,7 @@ async function generateImage(
   prompt: string,
   aspectRatio: string
 ): Promise<Buffer> {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${API_KEY}`;
 
   const response = await fetch(url, {
     method: "POST",

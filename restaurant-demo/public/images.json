@@ -1,1 +1,6 @@
-{}
+{
+  "hero": "/images/hero.jpg",
+  "about": "/images/about.jpg",
+  "pasta": "/images/pasta.jpg",
+  "wine": "/images/wine.jpg"
+}

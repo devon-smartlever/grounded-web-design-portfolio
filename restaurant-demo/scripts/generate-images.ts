@@ -63,7 +63,7 @@ async function generateImage(
   prompt: string,
   aspectRatio: string
 ): Promise<Buffer> {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${API_KEY}`;
 
   const response = await fetch(url, {
     method: "POST",
